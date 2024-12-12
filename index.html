@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фото с градиентом</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="overlay-text"><h1>Практическую работу выполнили</h1></div>
+    </div>
+    <div class="photo-container">
+        <div class="photo">
+            <img src="img/581_resized.jpg" alt="Фото 1">
+            <div class="info"><h3>Дзюбак Сергей Алексеевич</h3></div>
+        </div>
+        <div class="photo">
+            <img src="img/1385_resized.jpg" alt="Фото 2">
+            <div class="info"><h3>Самарин Никита Борисович</h3></div>
+        </div>
+        <div class="photo">
+            <img src="img/770_resized.jpg" alt="Фото 3">
+            <div class="info"><h3>Родионов Артём Владимирович</h3></div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.overlay').addEventListener('animationend', function() {
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
